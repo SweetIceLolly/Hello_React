@@ -1,0 +1,25 @@
+@mixin free-style($changedColor, $myColor, $fontSize: 50px * random()) {
+    font: {
+        family: sans-serif;
+        size: $fontSize;
+        weight: bold;
+    };
+    background-color: $changedColor;
+    color: $myColor;
+    transition: background-color 0.5s, color 0.5s, font-size 0.5s;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.bluebg h1 {
+    @include free-style(blue, red);
+}
+
+.bluebg h1:hover {
+    @extend h1;
+    color: pink;
+}
