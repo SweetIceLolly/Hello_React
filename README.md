@@ -50,7 +50,7 @@ class ComponentName extends React.Component {
   // componentDidUpdate() - Called after render()
   
   // Unmounting: 
-  componentWillUnmount() - Called when the component is about to be removed. (I havn't tried this)
+  // componentWillUnmount() - Called when the component is about to be removed. (I havn't tried this)
   
   // You MUST implement render and return a value!
   render() {
